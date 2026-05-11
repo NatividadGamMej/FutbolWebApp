@@ -1,0 +1,19 @@
+﻿Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebForm.pkg
+
+Object oLigaView is a cWebView
+    Set piWidth to 700
+    Set psCaption to "Ligas"
+
+    Object oMainPanel is a cWebPanel
+        Set piColumnCount to 12
+
+        Object oNombre is a cWebForm
+            Set piColumnSpan to 6
+            Set psLabel to "Nombre de la liga"
+        End_Object
+
+    End_Object
+
+End_Object
