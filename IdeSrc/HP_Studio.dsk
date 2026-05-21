@@ -1,0 +1,72 @@
+[Workspace]
+CurrentProject=WebApp.src
+Location=C:\DataFlex Projects\FutbolWebApp-main\IdeSrc\HP_Studio.dsk
+CreateNew=3
+[TabWindows]
+GroupCount=1
+HorizontalGroups=1
+[TabGroup0]
+GroupSize=40
+SelectedTab=4
+[Window0]
+Filename=Workspace Dashboard
+ViewType=101
+Top=31
+Left=0
+Bottom=665
+Right=1448
+TabIndex=0
+TabGroup=0
+[Window1]
+Filename=C:\DataFlex Projects\FutbolWebApp-main\AppSrc\SessionManager.wo
+ViewType=1
+Top=31
+Left=0
+Bottom=665
+Right=1448
+CursorLine=14
+CursorColumn=10
+TabIndex=1
+TabGroup=0
+[Window2]
+Filename=C:\DataFlex Projects\FutbolWebApp-main\AppSrc\Login.wo
+ViewType=1
+Top=31
+Left=0
+Bottom=665
+Right=1448
+CursorLine=102
+CursorColumn=28
+TabIndex=2
+TabGroup=0
+[Window3]
+Filename=C:\DataFlex Projects\FutbolWebApp-main\AppSrc\WebApp.src
+ViewType=1
+Top=31
+Left=0
+Bottom=665
+Right=1448
+CursorLine=2
+CursorColumn=17
+TabIndex=3
+TabGroup=0
+[Window4]
+Filename=C:\DataFlex Projects\FutbolWebApp-main\DDSrc\cjugadorDataDictionary.dd
+ViewType=3
+Top=31
+Left=0
+Bottom=665
+Right=1448
+TabIndex=5
+TabGroup=0
+[Window5]
+Filename=C:\DataFlex Projects\FutbolWebApp-main\AppSrc\JugadorView.wo
+ViewType=1
+Top=31
+Left=0
+Bottom=665
+Right=1448
+CursorLine=36
+CursorColumn=17
+TabIndex=4
+TabGroup=0

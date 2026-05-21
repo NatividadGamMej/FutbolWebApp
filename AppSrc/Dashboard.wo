@@ -1,0 +1,89 @@
+﻿Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebButton.pkg
+
+Object oDashboard is a cWebView
+    Set piWidth to 800
+    Set psCaption to "Dashboard"
+
+    Object oMainPanel is a cWebPanel
+        Set piColumnCount to 12
+
+        // =====================================
+        // ENTRENADORES
+        // =====================================
+        Object oEntrenadoresBtn is a cWebButton
+            Set psCaption to "Entrenadores"
+            Set piColumnSpan to 3
+            Set pbServerOnClick to True
+
+            WebRegisterPath ntNavigateForward oEntrenadorView
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+        End_Object
+
+        // =====================================
+        // JUGADORES
+        // =====================================
+        Object oJugadoresBtn is a cWebButton
+            Set psCaption to "Jugadores"
+            Set piColumnSpan to 3
+            Set pbServerOnClick to True
+
+            WebRegisterPath ntNavigateForward oJugadorView
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+        End_Object
+
+        // =====================================
+        // EQUIPOS
+        // =====================================
+        Object oEquiposBtn is a cWebButton
+            Set psCaption to "Equipos"
+            Set piColumnSpan to 3
+            Set pbServerOnClick to True
+
+            WebRegisterPath ntNavigateForward oEquipoView
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+        End_Object
+
+        // =====================================
+        // LIGAS
+        // =====================================
+        Object oLigasBtn is a cWebButton
+            Set psCaption to "Ligas"
+            Set piColumnSpan to 3
+            Set pbServerOnClick to True
+
+            WebRegisterPath ntNavigateForward oLigaView
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+        End_Object
+
+        // =====================================
+        // POSICIONES
+        // =====================================
+        Object oPosicionesBtn is a cWebButton
+            Set psCaption to "Posiciones"
+            Set piColumnSpan to 3
+            Set pbServerOnClick to True
+
+            WebRegisterPath ntNavigateForward oPosicionView
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+        End_Object
+
+    End_Object
+
+End_Object

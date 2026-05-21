@@ -1,0 +1,37 @@
+﻿    // EVENTOS DE NAVEGACIÓN
+
+    Procedure OnGetNavigateForwardData
+        Forward Send OnGetNavigateForwardData
+    End_Procedure
+
+    Procedure OnNavigateForward
+        Forward Send OnNavigateForward
+    End_Procedure
+
+    Procedure OnLoad
+        Forward Send OnLoad
+    End_Procedure
+
+    Procedure OnBeforeShow
+        Forward Send OnBeforeShow
+    End_Procedure
+
+    Procedure OnShow
+        Forward Send OnShow
+    End_Procedure
+
+    Procedure OnSaved
+        Forward Send OnSaved
+    End_Procedure
+
+    Procedure OnDelete
+        Forward Send OnDelete
+    End_Procedure
+
+    Procedure OnGetNavigateBackData
+        Forward Send OnGetNavigateBackData
+    End_Procedure
+
+    Procedure OnNavigateBack
+        Forward Send OnNavigateBack
+    End_Procedure

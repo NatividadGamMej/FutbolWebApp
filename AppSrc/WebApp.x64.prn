@@ -1,0 +1,40 @@
+Compiling Program: C:\DataFlex Projects\FutbolWebApp-main\AppSrc\WebApp.src
+Memory Available: 8734076928
+1>Use AllWebAppClasses.pkg
+Using pre-compiled package ALLWEBAPPCLASSES.PKG
+Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
+36306>Use cWebView.pkg
+36306>Use cWebLabel.pkg
+36306>
+36306>Object oWebApp is a cWebApp
+36308>    Set psTheme to "Df_Material"
+36309>
+36309>    Object oViewStack is a cWebViewStack
+36311>    End_Object
+36312>
+36312>    Object oDashboard is a cWebView
+36314>        Set psCaption to "Dashboard"
+36315>
+36315>        Object oLabel is a cWebLabel
+36317>            Set psCaption to "FUNCIONA"
+36318>        End_Object
+36319>    End_Object
+36320>
+36320>    Set phoDefaultView to oDashboard
+36321>
+36321>End_Object
+36322>
+36322>Send StartWebApp of oWebApp
+36323>
+Summary
+Memory Available: 8754728960
+Total Warnings : 0
+Total Errors   : 0
+Total Symbols  : 24740
+Total Resources: 0
+Total Commands : 36322
+Total Windows  : 0
+Total Pages    : 0
+Static Data    : 456147
+Message area   : 237463
+Total Blocks   : 16382

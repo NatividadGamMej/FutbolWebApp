@@ -1,0 +1,16 @@
+﻿Use cWebSessionManager.pkg
+
+Object oSessionManager is a cWebSessionManager
+
+    Procedure OnCreateDefaultRights
+    End_Procedure
+
+    Procedure OnDefineDefaultSessionRights
+    End_Procedure
+
+    Function ValidateLogin String sUser String sPassword Returns Boolean
+        Function_Return True
+    End_Function
+
+End_Object
+

@@ -1,0 +1,29 @@
+﻿Use cWebView.pkg
+Use cWebPanel.pkg
+Use cWebForm.pkg
+
+Object oEntrenadorView is a cWebView
+    Set piWidth to 700
+    Set psCaption to "Entrenadores"
+
+    Object oMainPanel is a cWebPanel
+        Set piColumnCount to 12
+
+        Object oNombre is a cWebForm
+            Set piColumnSpan to 4
+            Set psLabel to "Nombre"
+        End_Object
+
+        Object oApellido is a cWebForm
+            Set piColumnSpan to 4
+            Set psLabel to "Apellido"
+        End_Object
+
+        Object oNacionalidad is a cWebForm
+            Set piColumnSpan to 4
+            Set psLabel to "Nacionalidad"
+        End_Object
+
+    End_Object
+
+End_Object

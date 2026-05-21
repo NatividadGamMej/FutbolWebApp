@@ -1,0 +1,15 @@
+﻿Use DataDict.pkg
+
+Open liga
+
+Class cligaDataDictionary is a DataDictionary
+
+    Procedure Construct_Object
+        Forward Send Construct_Object
+
+        Set Main_File to liga.File_Number
+        Set Ordering to 1
+
+    End_Procedure
+
+End_Class

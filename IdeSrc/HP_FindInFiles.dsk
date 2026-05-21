@@ -1,0 +1,14 @@
+[Header]
+Mask=*.src;*.vw;*.sl;*.dg;*.rv;*.bp;*.pkg;*.wo;*.dd;*.inc;*.tpl;*.dfo;*.asp;*.asa;*.html;*.css;*.js
+Active=1
+SubDirectories=1
+WholeWordOnly=0
+RegularExpression=0
+SearchWhere=2
+Location=C:\DataFlex Projects\FutbolWebApp-main\IdeSrc\HP_FindInFiles.dsk
+[C:\DataFlex Projects\FutbolWebApp-main\AppSrc]
+IsEnabled=1
+[C:\DataFlex Projects\FutbolWebApp-main\DDSrc]
+IsEnabled=1
+[C:\DataFlex Projects\FutbolWebApp-main\AppHtml]
+IsEnabled=1

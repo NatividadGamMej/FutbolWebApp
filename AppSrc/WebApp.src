@@ -1,0 +1,23 @@
+﻿Use AllWebAppClasses.pkg
+Use cWebView.pkg
+Use cWebLabel.pkg
+
+Object oWebApp is a cWebApp
+    Set psTheme to "Df_Material"
+
+    Object oViewStack is a cWebViewStack
+    End_Object
+
+    Object oDashboard is a cWebView
+        Set psCaption to "Dashboard"
+
+        Object oLabel is a cWebLabel
+            Set psCaption to "FUNCIONA"
+        End_Object
+    End_Object
+
+    Set phoDefaultView to oDashboard
+
+End_Object
+
+Send StartWebApp of oWebApp
