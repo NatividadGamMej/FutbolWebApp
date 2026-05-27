@@ -1,0 +1,116 @@
+﻿// C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEntrenador.wo
+// Select de entrenadores
+//
+
+Use cWebView.pkg
+Use cWebList.pkg
+Use cWebMenuGroup.pkg
+Use cWebMenuItem.pkg
+Use cWebColumnButton.pkg
+Use cWebColumn.pkg
+
+Use centrenadorDataDictionary.dd
+Use ZoomEntrenador.wo
+
+Object oSelectEntrenador is a cWebView
+    Set psCaption to "Select de entrenadores"
+    Set peWebViewStyle to wvsDrilldown
+    Set peViewType to vtSelect
+    Set piColumnCount to 12
+    Set pbShowCaption to False
+    Set piMaxWidth to 1024
+
+    Object oentrenador_DD is a centrenadorDataDictionary
+    End_Object
+
+    Set Main_DD to oentrenador_DD
+    Set Server  to oentrenador_DD
+
+    Object oList is a cWebList
+        Set piColumnSpan to 0
+        Set psCSSClass to "MobileList"
+        Set pbServerOnRowClick to True
+        Set pbFillHeight to True
+        Set pbShowHeader to False
+        Set piSortColumn to 0
+
+        Object oentrenadorNombre is a cWebColumn
+            Entry_Item entrenador.Nombre
+            Set psCaption to "Nombre"
+            Set piWidth to 300
+        End_Object
+
+        Object oentrenadorApellido is a cWebColumn
+            Entry_Item entrenador.Apellido
+            Set psCaption to "Apellido"
+            Set piWidth to 300
+        End_Object
+
+        Object oentrenadorNacionalidad is a cWebColumn
+            Entry_Item entrenador.Nacionalidad
+            Set psCaption to "Nacionalidad"
+            Set piWidth to 250
+        End_Object
+
+        Object oDetailButton is a cWebColumnButton
+            Set psCaption to ""
+            Set piWidth to 45
+            Set pbFixedWidth to True
+            Set pbResizable to False
+            Set piListRowSpan to 1
+            Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
+            Set peAlign to alignRight
+
+            WebRegisterPath ntNavigateForward oZoomEntrenador
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+
+            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Move True to NavigateData.bReadOnly
+            End_Procedure
+
+        End_Object
+
+        Procedure OnRowClick String sRowId
+            Send NavigateForward of oZoomEntrenador Self
+        End_Procedure
+
+        Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+            Move True to NavigateData.bReadOnly
+        End_Procedure
+
+    End_Object
+
+    Object oActionGroup is a cWebMenuGroup
+
+        Object oSearch is a cWebMenuItem
+            Set psCSSClass to "WebPromptMenuItem"
+            Set psCaption to "Search"
+
+            Procedure OnClick
+                Send Search of oList
+            End_Procedure
+
+        End_Object
+
+        Object oNewButton is a cWebMenuItem
+            Set psCSSClass to "WebClearMenuItem"
+            Set psCaption to "New"
+
+            WebRegisterPath ntNavigateForward oZoomEntrenador
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+
+            Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Move True to NavigateData.bNewRecord
+            End_Procedure
+
+        End_Object
+
+    End_Object
+
+End_Object
