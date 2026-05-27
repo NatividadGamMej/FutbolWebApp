@@ -20,5 +20,12 @@ Object oJugadorView is a cWebView
         End_Object
 
     End_Object
+Procedure OnNavigateForward Handle hoSource tWebNavigateData NavigateData
+    Forward Send OnNavigateForward hoSource NavigateData
+
+    Showln "================="
+    Showln "ONNAVIGATEFORWARD"
+    Showln (Name(hoSource))
+End_Procedure
 
 End_Object

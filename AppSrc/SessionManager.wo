@@ -1,6 +1,9 @@
-Use cWebSessionManagerStandard.pkg
+﻿Use cWebSessionManager.pkg
 
-Object oSessionManager is a cWebSessionManagerStandard
+Object oSessionManager is a cWebSessionManager
+
+    Function UserLogin String sLoginName String sPassword Returns Boolean
+        Function_Return True
+    End_Function
+
 End_Object
-
-

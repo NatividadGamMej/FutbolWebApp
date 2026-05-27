@@ -100,7 +100,7 @@ Object oLogin is a cWebView
         WebGet psValue of oLoginName to sLoginName
         WebGet psValue of oPassword to sPassword
         
-        Get UserLogin of ghoWebSessionManager sLoginName sPassword to bResult
+        Move True to bResult
         
         If (bResult) Begin
             Send Hide of oLogin

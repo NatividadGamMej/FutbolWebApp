@@ -2,10 +2,10 @@
    "Projects": [
      {
        "nZoom": 0.4,
-       "nPositionX": -456.5,
-       "nPositionY": -534.16662598,
-       "nWidth": 2072.5,
-       "nHeight": 862.50006104,
+       "nPositionX": -606.5,
+       "nPositionY": -488.83337402,
+       "nWidth": 2372.5,
+       "nHeight": 772.49993896,
        "sProject": "WebApp.src",
        "bShowWebApp": false,
        "bShowHidden": false,
@@ -73,12 +73,12 @@
          {
            "Name": "oLogin",
            "Position": {
-             "sX": "-300",
-             "sY": "-375"
+             "sX": "579,75",
+             "sY": "-102,58340454"
            },
            "TabColor": {
-             "sColorDM": "#006EFF",
-             "sColorLM": "#006EFF"
+             "sColorDM": "#0058CF",
+             "sColorLM": "#2B8CFF"
            },
            "bHidden": false
          },
