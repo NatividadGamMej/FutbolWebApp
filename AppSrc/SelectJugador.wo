@@ -64,20 +64,28 @@ Object oSelectJugador is a cWebView
             WebRegisterPath ntNavigateForward oZoomJugador
 
             Procedure OnClick
+                Showln "EVENTO -> oDetailButton.OnClick"
+
                 Send NavigatePath
             End_Procedure
 
             Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Showln "EVENTO -> oDetailButton.OnGetNavigateForwardData"
+
                 Move True to NavigateData.bReadOnly
             End_Procedure
 
         End_Object
 
         Procedure OnRowClick String sRowId
+            Showln "EVENTO -> oList.OnRowClick"
+
             Send NavigateForward of oZoomJugador Self
         End_Procedure
 
         Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+            Showln "EVENTO -> oList.OnGetNavigateForwardData"
+
             Move True to NavigateData.bReadOnly
         End_Procedure
 
@@ -90,6 +98,8 @@ Object oSelectJugador is a cWebView
             Set psCaption to "Search"
 
             Procedure OnClick
+                Showln "EVENTO -> oSearch.OnClick"
+
                 Send Search of oList
             End_Procedure
 
@@ -102,10 +112,14 @@ Object oSelectJugador is a cWebView
             WebRegisterPath ntNavigateForward oZoomJugador
 
             Procedure OnClick
+                Showln "EVENTO -> oNewButton.OnClick"
+
                 Send NavigatePath
             End_Procedure
 
             Procedure OnGetNavigateForwardData tWebNavigateData ByRef NavigateData Handle hoToView
+                Showln "EVENTO -> oNewButton.OnGetNavigateForwardData"
+
                 Move True to NavigateData.bNewRecord
             End_Procedure
 
